@@ -128,4 +128,4 @@ async def stuff(message):
         await message.channel.send('https://www.youtube.com/channel/UCkz7mi8DKABGOdDS80Z-byg')
 
 #bot token 
-bot.run('ODk3Nzc1NDc4MDU0NzQ4MjIw.YWakkQ.Y0wGBcYPFPUEsrbXOFgqIS68l0o')
+bot.run('ur bot token')
