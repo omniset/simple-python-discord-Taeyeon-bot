@@ -1,4 +1,4 @@
-# Taeyeon_bot_test
+# Taeyeon bot test
 this bot using a python programming language 
 # my first discord bot 
 im using opensource discord bot and upgraded it by myself
