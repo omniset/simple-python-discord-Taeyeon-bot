@@ -3,7 +3,8 @@ from discord.ext import commands
 import datetime
 import random
 
-bot = commands.Bot(command_prefix='+', case_insensitive=True, help_command=None, description="MnD first discord bot")
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix='+', case_insensitive=True, help_command=None, description="MnD first discord bot", intens=intens)
 bot.remove_command('help')#this make the basic help command been deleted
 
 @bot.command()
