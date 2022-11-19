@@ -93,17 +93,17 @@ async def pradita(ctx):
 async def source(ctx):
     await ctx.send("https://github.com/omniset/simple-python-discord-Taeyeon-bot/blob/main/main.py")
 
-#under maintenance 
+
 @bot.command()
-async def info(ctx):
-    embed = discord.Embed(title=f"{ctx.guild.name}", description="first bot by MnD", timestamp=datetime.datetime.utcnow(), color=discord.Color.blue())
-    embed.add_field(name="Server created at", value=f"{ctx.guild.created_at}")
-    embed.add_field(name="Server Owner", value=f"{ctx.guild.owner}")
-    embed.add_field(name="Server Region", value=f"{ctx.guild.region}")
-    embed.add_field(name="Server ID", value=f"{ctx.guild.id}")
+async def serverinfo(ctx):
+    embed = discord.Embed(title = f"{ctx.guild.name} Info",  description="first bot by MnD", timestamp=datetime.datetime.utcnow(), color=discord.Color.blue())
+    embed.add_field(name = "🆔Server ID", value = f"{ctx.guild.id}", inline = True)
+    embed.add_field(name = "📆Created On", value = ctx.guild.created_at.strftime("%b %d %Y"), inline = True)
+    embed.add_field(name = "👥Members", value = f"{ctx.guild.member_count} Members", inline = True)
+    embed.add_field(name = '👑Owner', value = f"{ctx.guild.owner}", inline = True)
 
     # embed.set_thumbnail(url=f"{ctx.guild.icon}") 
-    embed.set_thumbnail(url="https://i.pinimg.com/564x/98/e3/db/98e3db2384d568cd30e578f5310520c0.jpg")#pinterest 
+    embed.set_thumbnail(url="https://i.pinimg.com/564x/98/e3/db/98e3db2384d568cd30e578f5310520c0.jpg")
 
     await ctx.send(embed=embed)
 
